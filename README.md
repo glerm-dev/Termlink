@@ -12,15 +12,15 @@ Uma imitação do terminal que há em Fallout 4
   <ul>
     <li>
       <h3>1 - Tela de Loading: </h3>
-      <img src="https://github.com/glerm-dev/Termlink/assets/87777795/84f5ee42-a220-4f34-a3c6-af5b5e4feaff" width = "650px">
+      <img src="src/assets/to_readme/Funcionamento1.png" width = "650px">
     </li>
     <li>
       <h3>2 - Tela inicial: </h3>
-      <img src="https://github.com/glerm-dev/Termlink/assets/87777795/5d0cbe3a-9ff2-4572-bdf8-2debf87fe49f" width = "650px">
+      <img src="src/assets/to_readme/Funcionamento2.png" width = "650px">
     </li>
     <li>
       <h3>3 - Funcionamento das tentativas: </h3>
-      <img src="https://github.com/glerm-dev/Termlink/assets/87777795/d5df26a4-79fe-4d2e-9ca8-471670e6bfaf" width = "650px">
+      <img src="src/assets/to_readme/Funcionamento3.png" width = "650px">
     </li>
   </ul>
 </div>
