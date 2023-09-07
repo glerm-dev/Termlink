@@ -27,5 +27,5 @@ Uma imitação do terminal que há em Fallout 4
 
 <div>
 <h2>Atualizações </h2>
-<p>Aqui ficaram gravadas as melhorias no código.</p>
+<p></p>
 </div>
