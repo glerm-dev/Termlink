@@ -8,9 +8,8 @@ void loading();
 int main()
 {
     system("COLOR A");
-    int r, trys = 0, ten = 4;
-    char senha[4];
-
+    int r, aprox = 0, trys = 4, ten = 4;
+    char senha[4], acess_word[5];
     char *words[]={"MAIN","FOOD","FORK","BALL","NOSE"};
     char *words2[]={"HAND","BABY","GIRL","MILK","COLA"};
     srand(time(0));
@@ -31,24 +30,37 @@ int main()
 
     printf("\n\n");
     //
+    r = rand()%4;
+    strcpy(acess_word, words[r]);
+
     do{
+        printf("\nTentativas: ");
+        for(int i = 0; i < ten; i++){
+            printf("\xDB ");
+        }
+        printf("\n");
         printf("Senha: ");
         scanf("%s", senha);
-        if(strcmp(senha, "FORK") == 0 || strcmp(senha, "fork") == 0){
+    // Conta a quantidade de letras semelhantes entre a palavra digitada e a senha;
+        for(int i = 0; i < 4; i++){
+            if(senha[i] == acess_word[i]){
+                aprox++;
+            }
+        }
+
+        if(strcmp(senha, acess_word) == 0){
             printf("Acesso garantido");
             printf("\n");
             return 0;
         }else {
-            ten--;
-            printf("Senha incorreta\n");
-            printf("\nTentativas: ");
-            for(int i = 0; i < ten; i++){
-                printf("\xDB ");
-            }
             printf("\n");
+            printf("Senha incorreta\n");
+            printf("Aproximação: %d\n", aprox);
+            ten--;
         }
-        trys++;
-    }while(trys < 4);
+        aprox = 0;
+        trys--;
+    }while(trys > 0);
 
     printf("\n\n");
     printf("Terminal bloqueado temporariamente");
