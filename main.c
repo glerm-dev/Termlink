@@ -10,8 +10,7 @@ int main()
     system("COLOR A");
     int r, aprox = 0, trys = 4, ten = 4;
     char senha[4], acess_word[5];
-    char *words[]={"MAIN","FOOD","FORK","BALL","NOSE"};
-    char *words2[]={"HAND","BABY","GIRL","MILK","COLA"};
+    char *words[]={"MAIN","FOOD","FORK","BALL","NOSE","HAND","BABY","GIRL","MILK","COLA"};
     srand(time(0));
 
     loading();
@@ -22,15 +21,19 @@ int main()
     printf("\n");
     // Imprime uma palavra aleatória em cada linha;
     for(int c = 0; c < 4; c++){
-        r = rand()%5;
-        printf("\n0x4FO ´~[//-%s]´~; 0x52T /.~´],!'-%s[", words[r],words2[r]);
-        r = rand()%5;
-        printf("\n0x503 ´~%s//-][´~; 0x5UI /.~´%s,!'-][", words[r],words2[r]);
+        r = rand()%8;
+        printf("\n0x4FO ´~[//-%s]´~; ", words[r]);
+        r = rand()%8;
+        printf("0x52T /.~´],!'-%s[", words[r]);
+        r = rand()%8;
+        printf("\n0x503 ´~%s//-][´~; ", words[r]);
+        r = rand()%8;
+        printf("0x5UI /.~´%s,!'-][", words[r]);
     }
 
     printf("\n\n");
     //
-    r = rand()%4;
+    r = rand()%8;
     strcpy(acess_word, words[r]);
 
     do{
