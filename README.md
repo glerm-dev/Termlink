@@ -29,5 +29,6 @@ Uma imitação do terminal que há em Fallout 4
 <h2>Atualizações </h2>
 <ul style: liststyle="none">
   <li>+ |18/09/23| Aproximação entre a palavra escolhida e a senha</li>
+  <li>+ |01/02/24| Começando a Implementação de bibliotecas próprias (.h) para a aplicação</li>
 </ul>
 </div>
